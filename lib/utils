@@ -4,7 +4,7 @@ function install_dotnet() {
   local BUILD_DIR="$1"
 
   # https://github.com/dotnet/core/blob/master/release-notes/download-archives/2.0.0-preview2-download.md
-  curl -sSL -o dotnet.tar.gz https://download.microsoft.com/download/F/A/A/FAAE9280-F410-458E-8819-279C5A68EDCF/dotnet-sdk-2.0.0-preview2-006497-linux-x64.tar.gz
+  curl -sSL -o dotnet.tar.gz https://download.microsoft.com/download/F/D/5/FD52A2F7-65B6-4912-AEDD-4015DF6D8D22/dotnet-dev-ubuntu.16.04-x64.1.0.1.tar.gz
   mkdir -p ${BUILD_DIR}/dotnet && tar zxf dotnet.tar.gz -C ${BUILD_DIR}/dotnet
   ln -s ${BUILD_DIR}/dotnet /app
 }
